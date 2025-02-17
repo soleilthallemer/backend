@@ -5,4 +5,4 @@ app = create_app()
 
 if __name__ == "Artemis-Steam":
     app.run()
->>>>>>> bb80544 (first endpoint)
+
