@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify
 
-main = Blueprint('main', __name__)
+main = Blueprint('main', __name__, url_prefix='/api')
 
 @main.route('/')
 def home():
@@ -14,3 +14,5 @@ def api_hello():
 @main.route('/api/status', methods=['GET'])
 def api_status():
     return jsonify({"status": "Running", "version": "1.0"})
+=======
+>>>>>>> bb80544 (first endpoint)
